@@ -1,14 +1,15 @@
-import Link from 'next/link';
+// import Link from 'next/link';
 import Router from 'next/router';
+import DPCard from '~/components/DPCard';
 
 import { Card, Button } from 'antd';
 
 export default () => (
-  <div style={{ padding: '25px' }}>
+  <div>
     <Card
       bodyStyle={{ padding: '25px' }}
-
     >
+      <DPCard />
       Welcome to My Portfolio.<br />
       <Button
         type="primary"

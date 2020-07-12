@@ -10,9 +10,20 @@ body,
   background-color:#90e6c9;
   color:#555;
 
+  --white: #ffffff;
+  --white-2: #fafafa;
+  --black: #000000;
+  --black-2:#141414;
+  
+  --volcano-6:#fa541c;
+  --cyan-5:#36cfc9;
+  --blue-2:#bae7ff;
+
   --blue-color: #7ccced;
-  --red-color: #d70000;
-  --yellow-color: #fdbd32;
+  --light-blue-color: #9fd1e6;
+  --red-color: #db3b3b;
+  --light-red-color: #fb8063;
+  --yellow-color: #fac95e;
   --pure-white-color: #fff;
   --white-color: #f9f9f9;
   --purple-color: #564f98;
@@ -24,6 +35,10 @@ body,
   --light-grey-color: #bcbec0;
   --lighter-grey-color: #e0e0e0;
   --lightest-grey-color: #f1f1f1;
+
+  @primary-color: var(--light-blue-color);
+  @secondary-color: var(--light-red-color);
+
 }
 
 body {
@@ -35,4 +50,8 @@ body {
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.card {
+  margin: 5px;
 }
