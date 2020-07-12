@@ -5,6 +5,12 @@ module.exports = {
     'next/babel'
   ],
   'plugins': [
+    [
+      "import", {
+        "libraryName": "antd",
+        "style": true
+      }
+    ],
     ['transform-define', env]
   ]
 }
