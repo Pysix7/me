@@ -1,5 +1,6 @@
-import React, { PureComponent } from 'react';
-import { Card, Row, Col } from 'antd';
+import React, { PureComponent, Fragment } from 'react';
+import Head from './Head';
+import Body from './Body';
 
 import './index.less';
 
@@ -7,13 +8,12 @@ class Layout extends PureComponent {
   render() {
     const { children } = this.props;
     return (
-      <Card
-        bordered={false}
-        className="card"
-        bodyStyle={{
-          padding: 0
-        }}
-      >{children}</Card>
+      <Fragment>
+        <Head />
+        <Body>
+          {children}
+        </Body>
+      </Fragment>
     )
   }
 }

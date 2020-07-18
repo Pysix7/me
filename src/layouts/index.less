@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'cyberpunk';
+  src: url('/fonts/cyberpunk.ttf');
+ }
+
 * {
   box-sizing: border-box;
 }
@@ -5,18 +10,13 @@
 html,
 body,
 #__next {
-  width: 100%;
-  height: 100%;
-  background-color:#90e6c9;
-  color:#555;
-
   --white: #ffffff;
   --white-2: #fafafa;
   --black: #000000;
   --black-2:#141414;
   
   --volcano-6:#fa541c;
-  --cyan-5:#36cfc9;
+  --cyan-5-color:#36cfc9;
   --blue-2:#bae7ff;
 
   --blue-color: #7ccced;
@@ -35,10 +35,20 @@ body,
   --light-grey-color: #bcbec0;
   --lighter-grey-color: #e0e0e0;
   --lightest-grey-color: #f1f1f1;
+  --blue-10-color:#002766;
 
   @primary-color: var(--light-blue-color);
   @secondary-color: var(--light-red-color);
+  
+  width: 100%;
+  height: 100%;
+  background-color:var(--blue-10-color);
+  color:var(--darkest-grey-color);
 
+  // flex for layout
+  display: flex;
+  flex-direction: column; 
+  
 }
 
 body {
@@ -46,12 +56,23 @@ body {
   padding: 0;
   font-weight: 400;
   font-size: 1em;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+
+  font-family: -apple-system, BlinkMacSystemFont,'cyberpunk'  'Roboto', 'Oxygen', 'Ubuntu',
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.card {
-  margin: 5px;
+.HeadCard {
+  background: transparent;
+  margin: 10px;
+  flex: 1
+}
+
+.BodyCard {
+  margin: 0px 10px 10px 10px;
+}
+
+.menuCol {
+  padding-left: 10px;
 }
