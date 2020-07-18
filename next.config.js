@@ -32,9 +32,9 @@ module.exports = {
 
 /* eslint-disable */
 const withLess = require('@zeit/next-less')
+const path = require('path')
 // const lessToJS = require('less-vars-to-js')
 // const fs = require('fs')
-// const path = require('path')
 
 // Where your antd-custom.less file lives
 // const themeVariables = lessToJS(
@@ -61,10 +61,13 @@ module.exports = withLess({
     // modifyVars: themeVariables, // make your antd custom effective
   },
   webpack: (config, { isServer }) => {
+    const origConfigs = {
+      ...config
+    }
     if (isServer) {
       const antStyles = /antd\/.*?\/style.*?/
       const origExternals = [...config.externals]
-      config.externals = [
+      origConfigs.externals = [
         (context, request, callback) => {
           if (request.match(antStyles)) return callback()
           if (typeof origExternals[0] === 'function') {
@@ -76,19 +79,22 @@ module.exports = withLess({
         ...(typeof origExternals[0] === 'function' ? [] : origExternals),
       ]
 
-      config.module.rules.unshift({
+      origConfigs.module.rules.unshift({
         test: antStyles,
         use: 'null-loader',
       })
       // FROM - THERYCC config
-      config.module.rules = config.module.rules.map(rule => {
+      origConfigs.module.rules = config.module.rules.map(rule => {
         if (rule.loader === 'babel-loader') {
           rule.options.cacheDirectory = false
         }
         return rule
       })
+
+      // For module resolution
+      origConfigs.resolve.alias['~'] = path.join(path.resolve(__dirname), 'src');
     }
-    return config
+    return origConfigs;
   },
 })
 
