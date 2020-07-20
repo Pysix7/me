@@ -3240,7 +3240,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(f
 
 /***/ }),
 
-/***/ 13:
+/***/ 17:
 /*!***********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Fprathap%2Fprojects%2Fcode%2Fpf%2Fsrc%2Fpages%2Findex.tsx ***!
   \***********************************************************************************************************************************/
@@ -3263,4 +3263,4 @@ eval("module.exports = dll_ec7d9c0249b2ef52b74c;//# sourceURL=[module]\n//# sour
 
 /***/ })
 
-},[[13,"static/runtime/webpack.js","styles"]]]);
+},[[17,"static/runtime/webpack.js","styles"]]]);
