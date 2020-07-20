@@ -1,7 +1,7 @@
 import React, { PureComponent, Fragment } from 'react';
 import { Card, Row, Col, Typography } from 'antd';
 
-const { Title,Paragraph } = Typography;
+const { Title, Paragraph } = Typography;
 
 import './index.less';
 
@@ -28,20 +28,15 @@ class DPCard extends PureComponent {
           bordered={false}
           bodyStyle={{ padding: 0 }}
           className="DPCard"
-          style={{
-            height: '100%',
-          }}
         >
           <Row
             style={{
               height: '100%',
             }}
           >
-            <Col
-              {...leftCol}
-            >
+            <Col {...leftCol} >
               <div className="profile">
-                <img src="/profile.jpg" alt="profile" />
+                <img src={process.env.LINK_PREFIX + "/profilex250.jpg"} alt="profile" />
               </div>
             </Col>
             <Col

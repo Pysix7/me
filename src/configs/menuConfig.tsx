@@ -1,11 +1,12 @@
 import React from 'react';
 /* USE OUTLINED */
-import { 
-  HomeOutlined, 
+import {
+  HomeOutlined,
   ProfileOutlined,
   ToolOutlined,
-  GlobalOutlined
- } from '@ant-design/icons';
+  GlobalOutlined,
+  FileOutlined
+} from '@ant-design/icons';
 import { MenuConfig } from '~/interface';
 
 const menuConfig: MenuConfig[] = [
@@ -28,6 +29,11 @@ const menuConfig: MenuConfig[] = [
     title: 'Social Links',
     path: '/socials',
     icon: <GlobalOutlined />
+  },
+  {
+    title: 'Resume',
+    path: '/resume',
+    icon: <FileOutlined />
   },
 ]
 export default menuConfig;

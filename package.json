@@ -15,7 +15,8 @@
     "less": "^3.11.3",
     "next": "latest",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-media": "^1.10.0"
   },
   "license": "ISC",
   "devDependencies": {

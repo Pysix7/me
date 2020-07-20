@@ -6,14 +6,18 @@ import './index.less';
 
 interface IProps extends MenuConfig {
   active: boolean;
+  drawerToggle?: () => void;
 }
 const MenuItem = (props: IProps) => {
-  const { title, icon, path, active } = props;
+  const { title, icon, path, active, drawerToggle } = props;
   return (
     <div
       className={active ? "menuItem active" : "menuItem"}
       onClick={() => {
         Router.push(path, process.env.LINK_PREFIX + path)
+        if (drawerToggle) {
+          drawerToggle()
+        }
       }}
     >
       {icon}

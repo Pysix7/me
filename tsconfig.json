@@ -3,7 +3,10 @@
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
-    "lib": ["dom", "esnext"],
+    "lib": [
+      "dom",
+      "esnext"
+    ],
     "outDir": "build/client",
     "sourceMap": true,
     "skipLibCheck": true,
@@ -22,16 +25,20 @@
     "strict": true,
     "baseUrl": "./src",
     "paths": {
-      "~/*": ["*"],
-      "~/components/*": ["components/*"],
-      "~/layouts/*": ["layouts/*"],
-      // "~/store/*": ["store/*"],
-      // "~/utils/*": ["utils/*"],
-      // "~/services/*": ["services/*"],
-      // "~/configs/*": ["configs/*"],
-      // "~/interfaces/*": ["interfaces/*"]
+      "~/*": [
+        "*"
+      ]
     }
   },
-  "exclude": ["node_modules", ".next", "out"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/**/*"]
+  "exclude": [
+    "node_modules",
+    ".next",
+    "out"
+  ],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/**/*"
+  ]
 }
