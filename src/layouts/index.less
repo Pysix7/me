@@ -1,7 +1,7 @@
-@font-face {
-  font-family: 'cyberpunk';
-  src: url('/fonts/cyberpunk.ttf');
- }
+// @font-face {
+//   font-family: 'cyberpunk';
+//   src: url('/fonts/cyberpunk.ttf');
+//  }
 
 * {
   box-sizing: border-box;
@@ -37,9 +37,6 @@ body,
   --lightest-grey-color: #f1f1f1;
   --blue-10-color:#002766;
 
-  @primary-color: var(--light-blue-color);
-  @secondary-color: var(--light-red-color);
-  
   width: 100%;
   height: 100%;
   background-color:var(--blue-10-color);
@@ -57,22 +54,36 @@ body {
   font-weight: 400;
   font-size: 1em;
 
-  font-family: -apple-system, BlinkMacSystemFont,'cyberpunk'  'Roboto', 'Oxygen', 'Ubuntu',
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen', 'Ubuntu',
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.HeadCard {
+.headCard {
   background: transparent;
   margin: 10px;
   flex: 1
 }
 
-.BodyCard {
-  margin: 0px 10px 10px 10px;
+.bodyCard {
+  margin: 10px;
 }
 
-.menuCol {
-  padding-left: 10px;
+@media(max-width: 599px){
+  .headCard {
+    flex:0;
+    background: transparent;
+    margin: 0;  
+  }
+  
+  .drawerHandle {
+    background-color: var(--white-color);
+    width: 30px;
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+    margin: 0 10px;
+    float: right;
+    cursor: pointer;
+  }
 }

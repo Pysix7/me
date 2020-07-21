@@ -1,7 +1,7 @@
 import Router from 'next/router';
 import Head from 'next/head';
 
-import { Card, Button } from 'antd';
+import { Button } from 'antd';
 
 export default () => (
   <div>

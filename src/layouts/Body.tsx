@@ -7,7 +7,7 @@ class Body extends PureComponent {
     return (
       <Card
         bordered={false}
-        className="BodyCard"
+        className="bodyCard"
         bodyStyle={{
           padding: 10
         }}

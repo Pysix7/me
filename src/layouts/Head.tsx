@@ -1,50 +1,58 @@
-import React, { PureComponent } from 'react';
-import { Row, Col } from 'antd';
-import ProfileCard from '~/components/ProfileCard';
-import Menu from '~/components/Menu';
+import React, { PureComponent, Fragment } from 'react';
+import { MenuOutlined } from '@ant-design/icons';
 import menuConfig from '~/configs/menuConfig';
+import MobileHead from "~/components/MobileHead";
+import DefaultHead from "~/components/DefaultHead";
 
 import './index.less';
 
-const leftCol = {
-  xs: 24,
-  sm: 24,
-  md: 12,
-  xl: 10,
-  lg: 10,
+interface IProps {
+  isMobile: boolean;
+}
+interface IState {
+  drawerVisible: boolean;
 }
 
-const rightCol = {
-  xs: 24,
-  sm: 24,
-  md: 12,
-  xl: 14,
-  lg: 14,
-}
+class Head extends PureComponent<IProps, IState> {
+  state = {
+    drawerVisible: false
+  }
+  componentDidMount() {
+    const { isMobile } = this.props;
+    if (isMobile) {
+      this.setState({
+        drawerVisible: true
+      })
+    }
+  }
 
-class Head extends PureComponent {
+  drawerToggle = () => {
+    this.setState((prevState: IState) => {
+      return {
+        drawerVisible: !prevState.drawerVisible
+      }
+    })
+  }
+
   render() {
+    const { isMobile } = this.props;
+    const { drawerVisible } = this.state;
+
     return (
-      <div
-        className="HeadCard"
-      >
-        <Row
-          style={{
-            height: '100%',
-          }}
-        >
-          <Col
-            {...leftCol}
-          >
-            <ProfileCard />
-          </Col>
-          <Col
-            {...rightCol}
-            className="menuCol"
-          >
-            <Menu menuData={menuConfig} />
-          </Col>
-        </Row>
+      <div className="headCard" >
+        {isMobile ? (
+          <Fragment>
+            <span onClick={this.drawerToggle} className="drawerHandle">
+              <MenuOutlined />
+            </span>
+            <MobileHead
+              menuData={menuConfig}
+              drawerToggle={this.drawerToggle}
+              drawerVisible={drawerVisible}
+            />
+          </Fragment>)
+          : <DefaultHead menuData={menuConfig} />
+        }
       </div>
     )
   }
