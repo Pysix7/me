@@ -4,6 +4,6 @@ export default () => (
     <Head>
       <title>Skills</title>
     </Head>
-    SKills
+    <div>Skills Tree Coming soon...</div>
   </div >
 )

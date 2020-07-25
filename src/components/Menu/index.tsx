@@ -1,4 +1,4 @@
-import React, { PureComponent, Fragment } from 'react';
+import React, { PureComponent } from 'react';
 import { withRouter } from 'next/router';
 import { Row } from 'antd';
 import { WithRouterProps } from 'next/dist/client/with-router';
@@ -21,8 +21,8 @@ class Menu extends PureComponent<IProps> {
     } = this.props;
 
     return (
-      <Fragment>
-        <Row className="MenuCard" >
+      <div className="MenuCard">
+        <Row>
           {menuData && menuData.length > 0 ? menuData.map((item: MenuConfig) => (
             <div key={item.path} >
               <MenuItem
@@ -34,7 +34,7 @@ class Menu extends PureComponent<IProps> {
           ))
             : null}
         </Row>
-      </Fragment>
+      </div>
     )
   }
 }

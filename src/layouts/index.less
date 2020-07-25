@@ -44,7 +44,7 @@ body,
 
   // flex for layout
   display: flex;
-  flex-direction: column; 
+  flex-direction: row; 
   
 }
 
@@ -63,14 +63,19 @@ body {
 .headCard {
   background: transparent;
   margin: 10px;
-  flex: 1
+  flex: 2
 }
 
 .bodyCard {
   margin: 10px;
+  height: '100%';
+  flex: 5;
 }
 
 @media(max-width: 599px){
+  #__next {
+    flex-direction: column;
+  }
   .headCard {
     flex:0;
     background: transparent;

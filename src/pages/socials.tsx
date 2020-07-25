@@ -5,6 +5,6 @@ export default () => (
     <Head>
       <title>Social Links</title>
     </Head>
-    Social Links
+    <div>Social Links Coming soon...</div>
   </div >
 )
