@@ -20,7 +20,7 @@ class MobileHead extends PureComponent<IProps> {
       <Drawer
         visible={drawerVisible}
         placement="top"
-        height="95%"
+        height="100%"
         closable={true}
         onClose={drawerToggle}
         className="topDrawer"

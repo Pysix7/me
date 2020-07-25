@@ -2,8 +2,8 @@ import Head from 'next/head';
 export default () => (
   <div>
     <Head>
-      <title>Resume</title>
+      <title>Projects</title>
     </Head>
-    Resume
+    <div>My Projects Coming soon...</div>
   </div >
 )

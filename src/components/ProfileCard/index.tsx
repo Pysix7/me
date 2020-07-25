@@ -1,23 +1,22 @@
 import React, { PureComponent, Fragment } from 'react';
-import { Card, Row, Col, Typography } from 'antd';
-
-const { Title, Paragraph } = Typography;
+import { Card, Row, Col } from 'antd';
+import profileData from '~/configs/data.ts';
 
 import './index.less';
 
 const leftCol = {
-  xs: 24,
-  sm: 24,
-  md: 12,
-  xl: 8,
-  lg: 8,
+  // xs: 24,
+  // sm: 24,
+  // md: 12,
+  // xl: 24,
+  // lg: 24,
 }
 const rightCol = {
-  xs: 24,
-  sm: 24,
-  md: 12,
-  xl: 16,
-  lg: 16,
+  // xs: 24,
+  // sm: 24,
+  // md: 12,
+  // xl: 24,
+  // lg: 24,
 }
 
 class DPCard extends PureComponent {
@@ -39,11 +38,9 @@ class DPCard extends PureComponent {
                 <img src={process.env.LINK_PREFIX + "/profilex250.jpg"} alt="profile" />
               </div>
             </Col>
-            <Col
-              {...rightCol}
-            >
-              <Title level={2}>Prathap K</Title>
-              <Paragraph>Just a guy who's developer for fun ^0^ </Paragraph>
+            <Col {...rightCol} >
+              <span className="name">{profileData.name}</span>
+              <p className="description">{profileData.description}</p>
             </Col>
           </Row>
         </Card>

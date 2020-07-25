@@ -4,8 +4,7 @@ import {
   HomeOutlined,
   ProfileOutlined,
   ToolOutlined,
-  GlobalOutlined,
-  FileOutlined
+  AppstoreAddOutlined
 } from '@ant-design/icons';
 import { MenuConfig } from '~/interface';
 
@@ -26,14 +25,9 @@ const menuConfig: MenuConfig[] = [
     icon: <ToolOutlined />
   },
   {
-    title: 'Social Links',
-    path: '/socials',
-    icon: <GlobalOutlined />
-  },
-  {
-    title: 'Resume',
-    path: '/resume',
-    icon: <FileOutlined />
+    title: 'Projects',
+    path: '/projects',
+    icon: <AppstoreAddOutlined />
   },
 ]
 export default menuConfig;

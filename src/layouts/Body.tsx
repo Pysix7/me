@@ -8,13 +8,7 @@ class Body extends PureComponent {
       <Card
         bordered={false}
         className="bodyCard"
-        bodyStyle={{
-          padding: 10
-        }}
-        style={{
-          height: '100%',
-          flex: 4
-        }}
+        bodyStyle={{ padding: 10 }}
       >
         {children}
       </Card>
