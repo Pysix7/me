@@ -3,3 +3,9 @@ export type MenuConfig = {
   icon: JSX.Element;
   path: string;
 }
+
+export type SocialLink = {
+  title: string;
+  icon: JSX.Element;
+  url: string;
+}
