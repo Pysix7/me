@@ -1,7 +1,7 @@
 import React from 'react';
 /* USE OUTLINED */
 import {
-  HomeOutlined,
+  // HomeOutlined,
   ProfileOutlined,
   ToolOutlined,
   AppstoreAddOutlined
@@ -9,14 +9,14 @@ import {
 import { MenuConfig } from '~/interface';
 
 const menuConfig: MenuConfig[] = [
-  {
-    title: 'Home',
-    path: '/',
-    icon: <HomeOutlined />,
-  },
+  // {
+  //   title: 'Home',
+  //   path: '/',
+  //   icon: <HomeOutlined />,
+  // },
   {
     title: 'About',
-    path: '/about',
+    path: '/',
     icon: <ProfileOutlined />,
   },
   {

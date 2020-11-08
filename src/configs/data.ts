@@ -1,4 +1,4 @@
 export default {
   name: "Prathap K",
-  description: "Just a guy Who's Developer for Fun!"
+  description: "Just a guy who's Developer for Fun!!"
 }
