@@ -4,6 +4,6 @@ export default () => (
     <Head>
       <title>Projects</title>
     </Head>
-    <div>My Projects Coming soon...</div>
+    <div>My Projects...</div>
   </div >
 )

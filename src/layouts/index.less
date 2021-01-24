@@ -37,11 +37,17 @@ body,
   --lightest-grey-color: #f1f1f1;
   --blue-10-color:#002766;
 
+  --primary-color:#bae7ff;
+  --secondary-color: #fa541c;
+  --white-color: #fafafa;
+  --grey-color: #555;
+  --background-color: #051939;
+
   width: 100%;
   height: 100%;
-  background-color:var(--blue-10-color);
+  background-color:var(--background-color);
   color:var(--darkest-grey-color);
-
+  
   // flex for layout
   display: flex;
   flex-direction: row; 
@@ -68,8 +74,11 @@ body {
 
 .bodyCard {
   margin: 10px;
-  height: '100%';
   flex: 5;
+  .ant-card-body {
+    height: 100%;
+    overflow-y: scroll;
+  }
 }
 
 @media(max-width: 599px){

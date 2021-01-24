@@ -5,7 +5,7 @@ import LinkComponent from '~/components/LinkComponent';
 import slData from '~/configs/socialLinks';
 import { SocialLink } from '~/interface';
 
-import './index.less';
+import '~/layouts/indexPage.less';
 
 export default () => {
 
