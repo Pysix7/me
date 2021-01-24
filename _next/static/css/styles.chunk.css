@@ -7481,8 +7481,8 @@ html {
 
 .DPCard {
   padding: 10px;
-  background-color: var(--cyan-5-color);
-  height: '100%';
+  background-color: var(--primary-color);
+  height: 100%;
 }
 .profile {
   height: 150px;
@@ -7524,7 +7524,7 @@ html {
 .MenuCard {
   padding: 10px;
   height: 100%;
-  border: 1px solid var(--cyan-5-color);
+  border: 1px solid var(--primary-color);
   border-radius: 5px;
   font-size: 1.3em;
 }
@@ -7584,9 +7584,14 @@ body,
   --lighter-grey-color: #e0e0e0;
   --lightest-grey-color: #f1f1f1;
   --blue-10-color: #002766;
+  --primary-color: #bae7ff;
+  --secondary-color: #fa541c;
+  --white-color: #fafafa;
+  --grey-color: #555;
+  --background-color: #051939;
   width: 100%;
   height: 100%;
-  background-color: var(--blue-10-color);
+  background-color: var(--background-color);
   color: var(--darkest-grey-color);
   display: flex;
   flex-direction: row;
@@ -7607,8 +7612,11 @@ body {
 }
 .bodyCard {
   margin: 10px;
-  height: '100%';
   flex: 5;
+}
+.bodyCard .ant-card-body {
+  height: 100%;
+  overflow-y: scroll;
 }
 @media (max-width: 599px) {
   #__next {
@@ -7627,46 +7635,6 @@ body {
     margin: 0 10px;
     float: right;
     cursor: pointer;
-  }
-}
-
-.linkComp {
-  padding: 5px;
-  font-size: 1.3em;
-}
-.linkComp > a > span:nth-child(2) {
-  margin: 0 5px;
-}
-
-.welcome {
-  text-align: center;
-  margin: 50px;
-  font-size: 4em;
-}
-.about {
-  margin: 20px;
-  text-align: center;
-  font-size: 1.8em;
-  height: 235px;
-}
-.socialLinks {
-  text-align: center;
-  margin: 50px 0;
-}
-.socialLinks > div {
-  justify-content: center;
-}
-@media (max-width: 599px) {
-  .welcome {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 2em;
-    font-weight: 500;
-  }
-  .about {
-    margin: 50px 0;
-    text-align: center;
-    font-size: 1.5em;
   }
 }
 
