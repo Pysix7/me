@@ -15,8 +15,17 @@ export interface ISkill {
   key: string;
   children?: any[]
 }
+
+export interface IProject {
+  title: string;
+  features: string[];
+  appLinks: string[];
+  todos?: string[];
+}
+
 export interface IProfileData {
   name: string;
   description: string;
-  skills: ISkill[]
+  skills: ISkill[];
+  projects: IProject[];
 }
