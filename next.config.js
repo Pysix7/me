@@ -49,6 +49,8 @@ module.exports = withLess({
   exportPathMap: function () {
     return {
       "/": { page: "/" },
+      "/skills": { page: "/skills" },
+      "/projects": { page: "/projects" },
     }
   },
   assetPrefix: repoNameURIPrefix,
