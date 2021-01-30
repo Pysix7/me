@@ -7638,6 +7638,46 @@ body {
   }
 }
 
+.linkComp {
+  padding: 5px;
+  font-size: 1.3em;
+}
+.linkComp > a > span:nth-child(2) {
+  margin: 0 5px;
+}
+
+.welcome {
+  text-align: center;
+  margin: 50px;
+  font-size: 4em;
+}
+.about {
+  margin: 20px;
+  text-align: center;
+  font-size: 1.8em;
+  height: 235px;
+}
+.socialLinks {
+  text-align: center;
+  margin: 50px 0;
+}
+.socialLinks > div {
+  justify-content: center;
+}
+@media (max-width: 599px) {
+  .welcome {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+    font-weight: 500;
+  }
+  .about {
+    margin: 50px 0;
+    text-align: center;
+    font-size: 1.5em;
+  }
+}
+
 /* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
 /* stylelint-disable no-duplicate-selectors */
 /* stylelint-disable */
@@ -10771,7 +10811,7 @@ a.ant-btn-sm {
 
 .skillCol {
   margin: 5px 10px;
-  border: 1px dashed blueviolet;
+  border: 2px dashed;
   padding: 5px 20px;
 }
 .skillCol .ant-typography {
