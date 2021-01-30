@@ -14,6 +14,7 @@ export interface ISkill {
   title: string;
   key: string;
   children?: any[]
+  color?: string;
 }
 
 export interface IProject {

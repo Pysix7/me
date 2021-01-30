@@ -14,7 +14,12 @@ export default () => {
     return (
       <div className="skillRow">
         {data.map((item: ISkill) => (
-          <Col span={24} key={item.key} className="skillCol">
+          <Col
+            span={24}
+            key={item.key}
+            className="skillCol"
+            style={{ borderColor: item.color || "#d3adf7" }}
+          >
             <div>
               <Text strong>{item.title}</Text>
             </div>

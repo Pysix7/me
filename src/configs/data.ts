@@ -7,6 +7,7 @@ const data: IProfileData = {
     {
       title: "JavaScript",
       key: "javascript",
+      color: "#fadb14",
     },
     {
       title: "HTML",
@@ -29,14 +30,17 @@ const data: IProfileData = {
         {
           title: "MongoDB",
           key: "mongo-db",
+          color: "#237804",
         },
         {
           title: "Express JS",
           key: "express-js",
+          color: "#faad14",
         },
         {
           title: "React",
           key: "react",
+          color: "#69c0ff",
           children: [
             {
               title: "Next.JS",
@@ -62,11 +66,13 @@ const data: IProfileData = {
         },
         {
           title: "React Native",
-          key: "react-native"
+          key: "react-native",
+          color: "#69c0ff",
         },
         {
           title: "Node jS",
-          key: "node-js"
+          key: "node-js",
+          color: "#95de64",
         }
       ]
     },
