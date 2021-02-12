@@ -17,10 +17,15 @@ export interface ISkill {
   color?: string;
 }
 
+export interface IAppLink {
+  url: string;
+  title: string;
+}
+
 export interface IProject {
   title: string;
   features: string[];
-  appLinks: string[];
+  appLinks: IAppLink[];
   todos?: string[];
 }
 

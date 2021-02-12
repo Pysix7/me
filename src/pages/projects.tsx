@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import profileData from 'configs/data';
-import { IProject } from '~/interface';
+import { IProject, IAppLink } from '~/interface';
 import { Fragment } from 'react';
 
 export default () => (
@@ -29,10 +29,10 @@ export default () => (
                   <Fragment>
                     <h3>app links:</h3>
                     <ul>
-                      {item.appLinks.map((link: string) => (
-                        <li key={`link-${link}`}>
+                      {item.appLinks.map((link: IAppLink) => (
+                        <li key={`link-${link.url}`} style={{ fontSize: '15px' }}>
                           <span>
-                            <a href={link}>{item.title}</a>
+                            <a href={link.url}>{link.title}</a>
                           </span>
                         </li>
                       ))}
