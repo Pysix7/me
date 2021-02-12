@@ -85,28 +85,42 @@ const data: IProfileData = {
     {
       title: "Carbooking app (MERN based)",
       features: [
-        "user authentication (login, signup).",
-        "roundtrip.",
-        "dummy stripe integration for booking confirmation.",
+        "User authentication (login, signup).",
+        "Roundtrip.",
+        "Dummy stripe integration for booking confirmation.",
       ],
       appLinks: [
-        "https://carbooking1.herokuapp.com"
+        {
+          url: "https://carbooking1.herokuapp.com",
+          title: "Carbooking"
+        }
       ]
     },
     {
       title: "Chat app (MERN based)",
       features: [
         "React PWA (Progessive Web application)",
-        "user authentication (login, signup)",
-        "multi user chat (by creating and joining rooms)",
-        "chat model - to create and maintain `roomid` and `participants` ",
-        "uuid based room-id",
-        "contact list to display the users .",
+        "User authentication (login, signup)",
+        "Multi user chat (by creating and joining rooms)",
+        "Global Chat",
+        "Chat model - to create and maintain `roomid` and `participants`",
+        "UUID based room-id",
+        "Contact list to display the users",
+        "React Hooks Based"
       ],
-      appLinks: [],
+      appLinks: [
+        {
+          url: "https://pysix-chat.herokuapp.com/",
+          title: "Chat (React PWA)",
+        },
+        {
+          url: "https://pysix-chat-server.herokuapp.com/ui",
+          title: "Node based Global chat UI"
+
+        }
+      ],
       todos: [
         "group chat/channel",
-        "deploy chat app",
       ]
     },
   ]
