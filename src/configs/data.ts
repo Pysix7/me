@@ -11,7 +11,8 @@ const data: IProfileData = {
     },
     {
       title: "HTML",
-      key: "html"
+      key: "html",
+      color: "#ff4d4f",
     },
     {
       title: "CSS",
@@ -77,13 +78,23 @@ const data: IProfileData = {
       ]
     },
     {
+      title: "Webpack",
+      key: "webpack",
+      color: "#69c0ff",
+    },
+    {
+      title: "Docker",
+      key: "docker",
+      color: "#69c0ff",
+    },
+    {
       title: "Micro Services",
       key: "micro-services"
-    }
+    },
   ],
   projects: [
     {
-      title: "Carbooking app (MERN based)",
+      title: "Carbooking app (MERN)",
       features: [
         "User authentication (login, signup).",
         "Roundtrip.",
@@ -97,7 +108,7 @@ const data: IProfileData = {
       ]
     },
     {
-      title: "Chat app (MERN based)",
+      title: "Chat app (MERN)",
       features: [
         "React PWA (Progessive Web application)",
         "User authentication (login, signup)",
