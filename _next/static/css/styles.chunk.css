@@ -7637,6 +7637,7 @@ body {
     margin: 0;
   }
   .drawerHandle {
+    border: 2px solid #1F51FF;
     background-color: var(--white-color);
     width: 30px;
     border-radius: 0 0 5px 5px;
@@ -10778,15 +10779,6 @@ a.ant-btn-sm {
   margin-left: 0;
 }
 
-.skillCol {
-  margin: 5px 10px;
-  border: 2px dashed;
-  padding: 5px 20px;
-}
-.skillCol .ant-typography {
-  font-size: 16px;
-}
-
 .linkComp {
   padding: 5px;
   font-size: 1.3em;
@@ -10795,15 +10787,15 @@ a.ant-btn-sm {
   margin: 0 5px;
 }
 
-.welcome {
+.ant-typography.welcome {
   text-align: center;
   margin: 50px;
-  font-size: 4em;
+  color: var(--darkest-grey-color);
 }
 .about {
   margin: 20px;
   text-align: center;
-  font-size: 1.8em;
+  font-size: 2em;
   height: 235px;
 }
 .socialLinks {
@@ -10824,6 +10816,54 @@ a.ant-btn-sm {
     margin: 50px 0;
     text-align: center;
     font-size: 1.5em;
+  }
+}
+
+.container {
+  margin: 10px 20px;
+}
+.ant-typography.antdTitle {
+  color: var(--darkest-grey-color);
+}
+.link {
+  font-size: 15px;
+  font-style: italic;
+}
+.ant-typography.projectTitle {
+  color: var(--light-red-color);
+}
+.card {
+  background-color: #ffffffcf;
+}
+.feature {
+  font-size: 15px;
+}
+@media (max-width: 599px) {
+  .container {
+    margin: 5px;
+  }
+}
+
+.container {
+  margin: 10px 20px;
+}
+.skillCol {
+  margin: 5px 10px;
+  border: 2px dashed;
+  padding: 5px 20px;
+}
+.skillCol .ant-typography {
+  font-size: 16px;
+}
+.card {
+  background-color: #ffffffcf;
+}
+.ant-typography.antdTitle {
+  color: var(--darkest-grey-color);
+}
+@media (max-width: 599px) {
+  .container {
+    margin: 5px;
   }
 }
 
