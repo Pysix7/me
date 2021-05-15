@@ -1,11 +1,12 @@
 import React, { Fragment } from 'react';
-import { Row } from 'antd';
+import { Row, Typography } from 'antd';
 import Head from 'next/head';
 import LinkComponent from '~/components/LinkComponent';
 import slData from '~/configs/socialLinks';
 import { SocialLink } from '~/interface';
 
 import '~/layouts/indexPage.less';
+const { Title } = Typography;
 
 export default () => {
 
@@ -14,13 +15,11 @@ export default () => {
       <Head>
         <title>About</title>
       </Head>
-      <div className="welcome">
-        Welcome to My Portfolio.
-      </div>
-      <div className="about">
+      <Title level={1} className="welcome">Welcome to My Portfolio</Title>
+      <p className="about">
         i am a Software Developer from Bengaluru, India.<br />
         currently working with MERN stack, building both WEB and Mobile applications.
-      </div>
+      </p>
       <div className="socialLinks">
         Social links:
           <Row>

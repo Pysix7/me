@@ -94,18 +94,17 @@ const data: IProfileData = {
   ],
   projects: [
     {
-      title: "Carbooking app (MERN)",
+      title: "Memory Game",
       features: [
-        "User authentication (login, signup).",
-        "Roundtrip.",
-        "Dummy stripe integration for booking confirmation.",
+        "Simple Cards Game",
+        "3 Difficulty Levels"
       ],
       appLinks: [
         {
-          url: "https://carbooking1.herokuapp.com",
-          title: "Carbooking"
+          url: "http://pysix-game.herokuapp.com",
+          title: "Memory Game"
         }
-      ]
+      ],
     },
     {
       title: "Chat app (MERN)",
@@ -132,6 +131,20 @@ const data: IProfileData = {
       ],
       todos: [
         "group chat/channel",
+      ]
+    },
+    {
+      title: "Carbooking app (MERN)",
+      features: [
+        "User authentication (login, signup).",
+        "Roundtrip.",
+        "Dummy stripe integration for booking confirmation.",
+      ],
+      appLinks: [
+        {
+          url: "https://carbooking1.herokuapp.com",
+          title: "Carbooking"
+        }
       ]
     },
   ]
