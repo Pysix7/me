@@ -1,18 +1,18 @@
 import Head from 'next/head';
 import { Fragment } from 'react';
-import { Col, Typography } from 'antd'
+import { Col, Typography, Card } from 'antd';
 import profileData from '~/configs/data';
 import { ISkill } from '~/interface';
 
 import '~/layouts/skills.less';
 
-const { Text } = Typography;
+const { Title, Text } = Typography;
 
 export default () => {
   const { skills } = profileData;
   const renderItem = (data: any) => {
     return (
-      <div className="skillRow">
+      <div>
         {data.map((item: ISkill) => (
           <Col
             span={24}
@@ -32,7 +32,7 @@ export default () => {
             </Fragment>
           </Col>
         ))}
-      </div>
+      </div >
     )
   };
 
@@ -41,8 +41,14 @@ export default () => {
       <Head>
         <title>Skills</title>
       </Head>
-      <div>
-        {renderItem(skills)}
+      <div className="container">
+        <Title level={1} className="antdTitle">My Skills</Title>
+        <Card
+          className="card"
+          bodyStyle={{ overflow: 'hidden' }}
+        >
+          {renderItem(skills)}
+        </Card>
       </div>
     </div >
   )
