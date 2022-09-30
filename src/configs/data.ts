@@ -2,7 +2,7 @@ import { IProfileData } from '~/interface';
 
 const data: IProfileData = {
   name: "Prathap K",
-  description: "Just a guy Who's Developer for Fun!",
+  description: "just a guy who's developer for fun!",
   skills: [
     {
       title: "JavaScript",
@@ -83,6 +83,11 @@ const data: IProfileData = {
       color: "#69c0ff",
     },
     {
+      title: "Electron.js",
+      key: "electron.js",
+      color: "#69c0ff",
+    },
+    {
       title: "Docker",
       key: "docker",
       color: "#69c0ff",
@@ -96,29 +101,35 @@ const data: IProfileData = {
     {
       title: "Memory Game",
       features: [
-        "Simple Cards Game",
-        "3 Difficulty Levels"
+        "simple cards game",
+        "3 difficulty levels",
+        "websockets api"
       ],
-      appLinks: [
+      links: [
         {
           url: "http://pysix-game.herokuapp.com",
           title: "Memory Game"
+        },
+        {
+          url: "https://github.com/Pysix7/memory-game",
+          title: "Codebase - github"
         }
-      ],
+      ]
     },
     {
-      title: "Chat app (MERN)",
+      title: "Chat app",
       features: [
-        "React PWA (Progessive Web application)",
-        "User authentication (login, signup)",
-        "Multi user chat (by creating and joining rooms)",
-        "Global Chat",
-        "Chat model - to create and maintain `roomid` and `participants`",
+        "MERN Stack",
+        "PWA (Progessive Web application)",
+        "user authentication (login, signup)",
+        "multi user chat (by creating and joining rooms)",
+        "global chat",
+        "chat model - to create and maintain `roomid` and `participants`",
         "UUID based room-id",
-        "Contact list to display the users",
-        "React Hooks Based"
+        "contact list to display the users",
+        "react hooks based"
       ],
-      appLinks: [
+      links: [
         {
           url: "https://pysix-chat.herokuapp.com/",
           title: "Chat (React PWA)",
@@ -127,23 +138,29 @@ const data: IProfileData = {
           url: "https://pysix-chat-server.herokuapp.com/ui",
           title: "Node based Global chat UI"
 
+        },
+        {
+          url: "https://github.com/Pysix7/myApps/tree/master/apps",
+          title: "Codebase - github"
         }
-      ],
-      todos: [
-        "group chat/channel",
       ]
     },
     {
-      title: "Carbooking app (MERN)",
+      title: "Carbooking app",
       features: [
-        "User authentication (login, signup).",
-        "Roundtrip.",
-        "Dummy stripe integration for booking confirmation.",
+        "MERN Stack",
+        "user authentication (login, signup).",
+        "roundtrip.",
+        "dummy stripe integration for booking confirmation.",
       ],
-      appLinks: [
+      links: [
         {
           url: "https://carbooking1.herokuapp.com",
           title: "Carbooking"
+        },
+        {
+          url: "https://github.com/Pysix7/myApps/tree/master/apps/cb",
+          title: "Codebase - github"
         }
       ]
     },

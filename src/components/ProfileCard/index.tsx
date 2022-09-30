@@ -1,6 +1,6 @@
 import React, { PureComponent, Fragment } from 'react';
 import { Card, Row, Col } from 'antd';
-import profileData from '~/configs/data.ts';
+import profileData from '~/configs/data';
 
 import './index.less';
 

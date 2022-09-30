@@ -2,6 +2,8 @@ import React, { PureComponent, Fragment } from 'react';
 import Media from 'react-media';
 import Head from './Head';
 import Body from './Body';
+import Menu from '~/components/Menu';
+import menuConfig from '~/configs/menuConfig';
 
 import './index.less';
 
@@ -14,7 +16,8 @@ class Layout extends PureComponent {
           <Fragment>
             <Head isMobile={isMobile} />
             <Body>
-              {children}
+              <Menu menuData={menuConfig} />
+              <div className='page-container'>{children}</div>
             </Body>
           </Fragment>
         )}

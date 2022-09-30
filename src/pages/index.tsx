@@ -17,8 +17,8 @@ export default () => {
       </Head>
       <Title level={1} className="welcome">Welcome to My Portfolio</Title>
       <p className="about">
-        i am a Software Developer from Bengaluru, India.<br />
-        currently working with MERN stack, building both WEB and Mobile applications.
+        i am a software developer from bengaluru, india.<br />
+        currently working with MERN stack, building both web and mobile applications.
       </p>
       <div className="socialLinks">
         Social links:

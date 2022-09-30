@@ -28,7 +28,7 @@ class MobileHead extends PureComponent<IProps> {
         <div style={{ margin: '20px 0' }}>
           <ProfileCard />
         </div>
-        <Menu menuData={menuData} drawerToggle={drawerToggle} />
+        {/* <Menu menuData={menuData} drawerToggle={drawerToggle} /> */}
       </Drawer>
     )
   }

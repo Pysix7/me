@@ -23,7 +23,7 @@ const MasonryLayout: React.FC<any> = (props) => {
   for (let i = 0; i < children.length; i++) {
     const columnIndex = i % columns;
     columnWrapper[`column${columnIndex}`].push(
-      <div style={{ marginBottom: `${gap}px` }}>
+      <div style={{ marginBottom: `${gap}px` }} key={`mansory-item-${i}`}>
         {children[i]}
       </div>
     );
@@ -36,7 +36,9 @@ const MasonryLayout: React.FC<any> = (props) => {
         style={{
           marginLeft: `${i > 0 ? gap : 0}px`,
           flex: 1,
-        }}>
+        }}
+        key={`mansory-item2-${i}`}
+        >
         {columnWrapper[`column${i}`]}
       </div>
     );

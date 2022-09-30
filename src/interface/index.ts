@@ -17,7 +17,12 @@ export interface ISkill {
   color?: string;
 }
 
-export interface IAppLink {
+export interface ILink {
+  url: string;
+  title: string;
+}
+
+export interface IGitLink {
   url: string;
   title: string;
 }
@@ -25,8 +30,7 @@ export interface IAppLink {
 export interface IProject {
   title: string;
   features: string[];
-  appLinks: IAppLink[];
-  todos?: string[];
+  links: ILink[];
 }
 
 export interface IProfileData {

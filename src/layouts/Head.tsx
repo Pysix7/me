@@ -51,7 +51,7 @@ class Head extends PureComponent<IProps, IState> {
               drawerVisible={drawerVisible}
             />
           </Fragment>)
-          : <DefaultHead menuData={menuConfig} />
+          : <DefaultHead  />
         }
       </div>
     )

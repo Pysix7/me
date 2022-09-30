@@ -1,9 +1,10 @@
 .menuItem {
   border-radius: 5px;
-  background-color:var(--white-color);
+  // background-color:var(--white-color);
   text-align: center;
-  padding: 5px;
-  margin: 5px;
+  font-size: 1.3em;
+  padding: 0 5px;
+  margin: 0 5px;
   cursor: pointer;
   
   & > span {
@@ -12,12 +13,13 @@
 }
 
 .active {
-  color:var(--white-color);
-  background-color:var(--light-red-color); 
+  color: var(--light-red-color);
+  // background-color: var(--light-red-color); 
  }
 
  @media(max-width: 599px){
   .menuItem {
-    margin: 10px 5px;
+    margin: 5px 5px;
+    font-size: 1.5em;
   }
 }

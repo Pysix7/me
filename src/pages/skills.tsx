@@ -42,7 +42,7 @@ export default () => {
         <title>Skills</title>
       </Head>
       <div className="container">
-        <Title level={1} className="antdTitle">My Skills</Title>
+        <Title level={1} className="antdTitle">Skills</Title>
         <Card
           className="card"
           bodyStyle={{ overflow: 'hidden' }}

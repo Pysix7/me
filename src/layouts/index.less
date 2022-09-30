@@ -88,6 +88,10 @@ body {
   }
 }
 
+.page-container {
+  margin-top: 40px;
+}
+
 @media(max-width: 599px){
   #__next {
     flex-direction: column;
@@ -95,7 +99,8 @@ body {
   .headCard {
     flex:0;
     background: transparent;
-    margin: 0;  
+    margin: 0;
+    position: relative;  
   }
   
   .drawerHandle {
@@ -107,5 +112,12 @@ body {
     margin: 0 10px;
     float: right;
     cursor: pointer;
+    position: fixed;
+    right: 15px;
+    z-index: 3;
+  }
+
+  .page-container {
+    margin-top: 70px;
   }
 }

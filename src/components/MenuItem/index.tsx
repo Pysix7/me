@@ -15,9 +15,7 @@ const MenuItem = (props: IProps) => {
       className={active ? "menuItem active" : "menuItem"}
       onClick={() => {
         Router.push(path, process.env.LINK_PREFIX + path)
-        if (drawerToggle) {
-          drawerToggle()
-        }
+        if (drawerToggle) drawerToggle()
       }}
     >
       {icon}
