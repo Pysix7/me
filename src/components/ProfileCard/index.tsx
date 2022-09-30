@@ -5,18 +5,18 @@ import profileData from '~/configs/data';
 import './index.less';
 
 const leftCol = {
-  // xs: 24,
-  // sm: 24,
-  // md: 12,
-  // xl: 24,
-  // lg: 24,
+  xs: 24,
+  sm: 24,
+  md: 24,
+  xl: 24,
+  lg: 24,
 }
 const rightCol = {
-  // xs: 24,
-  // sm: 24,
-  // md: 12,
-  // xl: 24,
-  // lg: 24,
+  xs: 24,
+  sm: 24,
+  md: 24,
+  xl: 24,
+  lg: 24,
 }
 
 class DPCard extends PureComponent {
