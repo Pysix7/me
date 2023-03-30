@@ -26,24 +26,21 @@ class DPCard extends PureComponent {
         <Card
           bordered={false}
           bodyStyle={{ padding: 0 }}
-          className="DPCard"
         >
-          <Row
-            style={{
-              height: '100%',
-            }}
-          >
+          <Row className="DPCard">
             <Col {...leftCol} >
               <div className="profile">
-                <img src={process.env.LINK_PREFIX + "/profilex250.jpg"} alt="profile" />
+                {/*<img src={process.env.LINK_PREFIX + "/profilex250.jpg"} alt="profile" />*/}
               </div>
             </Col>
-            <Col {...rightCol} >
-              <span className="name">{profileData.name}</span>
-              <p className="description">{profileData.description}</p>
+            <Col {...rightCol}>
+              <div className="nameContainer">
+                <span className="name">{profileData.name}</span>
+              </div>
             </Col>
           </Row>
         </Card>
+        <p className="description">{profileData.description}</p>
       </Fragment>
     )
   }

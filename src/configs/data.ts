@@ -1,8 +1,8 @@
 import { IProfileData } from '~/interface';
 
 const data: IProfileData = {
-  name: "Prathap K",
-  description: "just a guy who's developer for fun!",
+  name: "ಪ್ರತಾಪ್",
+  description: "just a guy who's developer for fun.",
   skills: [
     {
       title: "JavaScript",
@@ -96,6 +96,30 @@ const data: IProfileData = {
       title: "Micro Services",
       key: "micro-services"
     },
+    {
+      title: "Git",
+      key: "git",
+      color: "#f14e32"
+    },
+    {
+      title: "Github",
+      key: "github"
+    },
+    {
+      title: "MySql",
+      key: "mysql",
+      color: "#3E6E93"
+    },
+    {
+      title: "Typescript",
+      key: "typescript",
+      color: "#3178c6"
+    },
+    {
+      title: "PWA",
+      key: "pwa",
+      color: "#5307c8"
+    }
   ],
   projects: [
     {
