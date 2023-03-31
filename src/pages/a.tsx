@@ -18,7 +18,7 @@ export default () => {
       <Head>
         <title>😁</title>
       </Head>
-      <Title level={1} className="antdTitle">😁GOT YOU😁</Title>
+      <Title level={1} className="antdTitle">😁</Title>
     </div >
   )
 }

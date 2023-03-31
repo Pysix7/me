@@ -51,6 +51,7 @@ module.exports = withLess({
       "/": { page: "/" },
       "/skills": { page: "/skills" },
       "/projects": { page: "/projects" },
+      "/a": { page: "/a" },
     }
   },
   assetPrefix: repoNameURIPrefix,

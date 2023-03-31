@@ -15,10 +15,10 @@ export default () => (
     {(isMobile: boolean) => (
       <div>
         <Head>
-          <title>Projects</title>
+          <title>My Personal Projects</title>
         </Head>
         <div className="container">
-          <Title level={1} className="antdTitle">Projects</Title>
+          <Title level={1} className="antdTitle">My Personal Projects</Title>
           <MasonryLayout columns={isMobile ? 1 : 2}>
             {profileData.projects.map((item: IProject) => (
               <Card

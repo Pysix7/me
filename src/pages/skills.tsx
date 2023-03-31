@@ -13,11 +13,11 @@ const { Title, Text } = Typography;
 export default () => {
   const { skills } = profileData;
 
-  const renderItem = (data: any) => {
+  const renderItem = (data: any, cols: number) => {
     return (
       <Media query="(max-width: 599px)">
         {(isMobile: boolean) => (
-          <MasonryLayout columns={isMobile ? 1 : 3}>
+          <MasonryLayout columns={isMobile ? 1 : cols}>
             {data.map((item: ISkill) => (
               <Card
                 key={item.key}
@@ -28,7 +28,7 @@ export default () => {
                 <Fragment>
                   {item.children && item.children.length > 0 && (
                     <Col>
-                      {renderItem(item.children)}
+                      {renderItem(item.children, 2)}
                     </Col>
                   )}
                 </Fragment>
@@ -43,11 +43,11 @@ export default () => {
   return (
     <div>
       <Head>
-        <title>Skills</title>
+        <title>My Skills</title>
       </Head>
       <div className="container">
-        <Title level={1} className="antdTitle">Skills</Title>
-        {renderItem(skills)}
+        <Title level={1} className="antdTitle">My Skills</Title>
+        {renderItem(skills, 3)}
       </div>
     </div >
   )

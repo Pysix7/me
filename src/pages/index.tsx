@@ -13,7 +13,7 @@ export default () => {
   return (
     <Fragment>
       <Head>
-        <title>About</title>
+        <title>About Me</title>
       </Head>
       <Title level={1} className="welcome">Welcome to My Portfolio</Title>
       <p className="about">
